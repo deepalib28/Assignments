@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverrideToString", "OverrideToString\OverrideToString.csproj", "{D0F65A75-9AEA-4175-B001-4B715507D47D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverrideToStringTest", "OverrideToStringTest\OverrideToStringTest.csproj", "{841BCB3E-BE68-4433-866C-D87DF3F90760}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0F65A75-9AEA-4175-B001-4B715507D47D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0F65A75-9AEA-4175-B001-4B715507D47D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0F65A75-9AEA-4175-B001-4B715507D47D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0F65A75-9AEA-4175-B001-4B715507D47D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{841BCB3E-BE68-4433-866C-D87DF3F90760}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{841BCB3E-BE68-4433-866C-D87DF3F90760}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{841BCB3E-BE68-4433-866C-D87DF3F90760}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{841BCB3E-BE68-4433-866C-D87DF3F90760}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
