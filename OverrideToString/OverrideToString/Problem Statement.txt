@@ -1,0 +1,1 @@
+﻿Assignment 1. Override the Object's ToString() method to show some info about your class.
