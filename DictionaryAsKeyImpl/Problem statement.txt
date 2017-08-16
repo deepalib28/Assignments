@@ -1,0 +1,23 @@
+
+Assignment 2. Demonstrate the above class for a System.Dictionary as a key and do following operations.
+
+	a. Ability to add a key value 
+	b. Update value by key
+	c. Delete value by using key
+
+All the above operations should be based on the identity of the class.
+
+Ensure that it adheres to the properties of equality with below test cases: 
+
+1. Equals must be reflexive; that is, 
+x.Equals(x) must return true. 
+
+2. Equals must be symmetric; that is, 
+x.Equals(y) must return the same value as y.Equals(x). 
+
+3. Equals must be transitive; that is, 
+if x.Equals(y) returns true 
+and y.Equals(z) returns true, 
+then x.Equals(z) must also return true.
+
+4. Add some sample data and verify the add, update and delete through test cases.
