@@ -1,0 +1,7 @@
+Assignment 3. Implement the caching mechanism for clever memory management and provide below features,
+
+a. Caching should take any type and can be retrieved by a string key.
+b. It should allow clearing cache by key.
+c. It should allow updating the existing caching by key.
+
+Not expiry timeout and thread safe required to implement as of now.
