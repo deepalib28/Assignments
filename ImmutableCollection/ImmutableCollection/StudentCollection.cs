@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ImmutableCollection
 {
-    public class Class1
+    public class StudentCollection
     {
+        //dictionay 
     }
 }
