@@ -1,0 +1,6 @@
+Make a utility that provides an immutable collection type based on the dot net framework provided 
+mutable collections (choose any one mutable collection except List).
+
+1. Do not use any inbuilt method/utility which provides direct way to do so.
+2. Provide some of the basic possible operations which your selected collection was providing already.
+3. Explain the possible use cases of your utility.
