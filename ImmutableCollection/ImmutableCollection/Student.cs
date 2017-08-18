@@ -8,13 +8,6 @@ namespace ImmutableCollection
 {
     public class Student
     {
-        public TYPE Type { get; set; }
-
-        public  Dictionary<string, string> abc = new Dictionary<string, string>();
-
-        public void Do()
-        {
-            abc.Remove(key)
-        }
+    
     }
 }
