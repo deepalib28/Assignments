@@ -21,8 +21,11 @@ namespace CachingImplementationTest
         {
             Initialize();
             _cache.Add("1", DataSource.GetStudent());
-            Assert.IsTrue(_cache.count == 1);
-
+            var stud = _cache.Get("1");
+            Student data=stud as Student;
+           
+            Assert.AreEqual(data.Firstname, DataSource.GetStudent().Firstname);
+            
         }
 
         [TestMethod]
@@ -30,22 +33,25 @@ namespace CachingImplementationTest
         {
             Initialize();
             _cache.Add("1",null);
-            Assert.IsTrue(_cache.count==0);
+            var stud = _cache.Get("1");
+            Assert.IsNotNull(stud);
+         
         }
+
         [TestMethod]
-        public void Retrieve()
+        public void Get()
         {
 
             Initialize();
             _cache.Add("1", DataSource.GetStudent());
-            var stud = _cache.Retrieve("1");
+            var stud = _cache.Get("1");
             Assert.IsNotNull(stud);
         }
 
         [TestMethod]
         public void Update()
         {
-            Initialize();
+           Initialize();
            var Cache= _cache.Update("1", new Student("Dips","bhavsar"));
 
           Assert.AreNotSame(Cache,DataSource.GetStudent());
@@ -57,7 +63,12 @@ namespace CachingImplementationTest
             Initialize();
             _cache.Add("1", DataSource.GetStudent());
             _cache.Clear();
-            Assert.IsTrue(_cache.count == 0);
+           
+            var stud = _cache.Get("1");
+
+            var ex = stud as Exception;
+           
+            Assert.IsTrue(string.Equals("Key not Found exception",ex.Message,StringComparison.OrdinalIgnoreCase));
         }
 
         [TestMethod]
@@ -67,7 +78,9 @@ namespace CachingImplementationTest
             _cache.Add("1", DataSource.GetStudent());
             _cache.Add("2", DataSource.GetStudent());
             _cache.Remove("2");
-            Assert.IsTrue(_cache.count==1);
+            var stud = _cache.Get("2");
+            var ex = stud as Exception;
+            Assert.IsTrue(string.Equals("Key not Found exception", ex.Message, StringComparison.OrdinalIgnoreCase));
         }
     }
 }
